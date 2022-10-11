@@ -41,6 +41,14 @@ footer{
     color: var(--ap-secondary-color);
 }
 
+.even{
+    font-weight: bolder;
+}
+
+.odd{
+    font-weight: 100;
+}
+
 
 /*---------- navbar overrides ----------*/
 
