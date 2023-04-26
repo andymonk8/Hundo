@@ -10,6 +10,15 @@ function getValues() {
   startValue = parseInt(startValue);
   endValue = parseInt(endValue);
 
+  if (startValue > endValue){
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Start Value must be Lower than End Value!",
+    });
+    return;
+  }
+
   if (Number.isInteger(startValue) && Number.isInteger(endValue)) {
     // generate the numbers based on user input
     let numbers = generateNumbers(startValue, endValue);
